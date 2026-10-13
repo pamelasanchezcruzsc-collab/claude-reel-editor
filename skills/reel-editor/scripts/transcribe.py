@@ -44,9 +44,17 @@ k = key()
 if k:
     model, words = scribe(k)
     print(f"transcribed with ElevenLabs {model}: {len(words)} words")
+elif (Path(os.environ.get("PARAKEET_DIR", "~/.cache/reels/parakeet-v3")).expanduser() / "tokens.txt").exists():
+    # offline Parakeet (+ Whisper turbo words for non-English): used where Hugging Face downloads are blocked
+    subprocess.run([sys.executable, str(Path(__file__).with_name("parakeet_asr.py")), str(src), str(out)], check=True)
+    sys.exit(0)
 else:
     d = out.parent / (out.stem + "_whisper")
-    subprocess.run(["npx", "-y", "hyperframes", "transcribe", str(src), "-d", str(d), "--json", "--model", "small.en"], capture_output=True, check=True)
+    bj = Path(os.environ.get("REELS_HOME", "~/reels")).expanduser() / "brand.json"
+    lang = (json.load(open(bj)).get("language") if bj.exists() else None) or "en"
+    model = os.environ.get("REELS_WHISPER_MODEL") or ("small.en" if lang == "en" else "small")   # .en models are English-only
+    subprocess.run(["npx", "-y", "hyperframes", "transcribe", str(src), "-d", str(d), "--json", "--engine", "whisper",
+                    "--model", model, "--language", lang], capture_output=True, check=True)
     words = json.load(open(d / "transcript.json"))
     print(f"transcribed with local Whisper (no ElevenLabs key): {len(words)} words - timing can drift ~0.3 s")
 json.dump(words, open(out, "w"))

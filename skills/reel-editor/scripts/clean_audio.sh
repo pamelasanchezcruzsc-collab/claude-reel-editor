@@ -12,6 +12,9 @@ if [[ "$DENOISE" == "--denoise" ]]; then
   if command -v deepFilter >/dev/null 2>&1; then
     deepFilter -a "${DENOISE_DB:-30}" "$SRC" -o "$TMP/dfn" >/dev/null 2>&1   # capped at 30 dB: light, natural, no underwater artefacts
     SRC="$(ls "$TMP"/dfn/*.wav | head -1)"
+  elif [ -s "$HOME/.cache/reels/gtcrn_simple.onnx" ] && python3 -c "import sherpa_onnx" 2>/dev/null; then
+    # no PyTorch here: GTCRN through sherpa-onnx (strong on crowd/room noise; 16 kHz bandwidth)
+    python3 "$(dirname "$0")/denoise_sherpa.py" "$SRC" "$TMP/gt.wav" && SRC="$TMP/gt.wav"
   else
     echo "note: DeepFilterNet not installed, using ffmpeg's built-in denoiser (weaker on birds/traffic)" >&2
     ffmpeg -v error -y -i "$SRC" -af "afftdn=nf=-25" "$TMP/dn.wav"
