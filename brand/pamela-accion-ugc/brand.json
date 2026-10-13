@@ -1,0 +1,31 @@
+{
+  "name": "Pamela · Acción UGC",
+  "language": "es",
+  "resolution": [1080, 1920],
+  "pacing": "fast",
+  "graphics": "busy",
+  "max_seconds": 60,
+  "fillers": ["eh", "ehh", "em", "emm", "mm", "mmm", "ah", "um", "hmm"],
+  "colors": {
+    "main": "#964B53",
+    "pop": "#961D1D",
+    "light": "#E7E1DB",
+    "soft": "#D0C8BF",
+    "earth": "#8F6656",
+    "caption": "#E7E1DB",
+    "caption_accent": "#961D1D"
+  },
+  "capcut": true,
+  "capcut_font": null,
+  "sfx": "lots",
+  "deliver_dir": "~/Videos/Reels",
+  "grade": null,
+  "require_carousel": false,
+  "title_outline": "#E7E1DB",
+  "captions": { "mode": "word", "case": "lower", "size": 104, "y": 1250 },
+  "fonts": {
+    "head":   { "family": "Montserrat", "file": "~/reels/fonts/Montserrat-ExtraBold.ttf", "weight": 800 },
+    "body":   { "family": "Poppins", "file": "~/reels/fonts/Poppins-SemiBold.ttf", "weight": 600 },
+    "accent": { "family": "DM Serif Display", "file": "~/reels/fonts/DMSerifDisplay-Regular.ttf", "weight": 400 }
+  }
+}
