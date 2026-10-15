@@ -48,3 +48,4 @@ Instagram y TikTok · 1080p · versión CapCut activada (vive en España).
 - Siempre dinámico, como el reel de referencia.
 - Transcribir en español (nunca con el modelo solo inglés).
 - Palabra clave de los subtítulos (burdeos) siempre sobre un panel crema (`captions.accent_bg`): el burdeos sobre ropa azul u oscura no se lee.
+- Subtítulos con sombra fuerte (`captions.shadow: "strong"`, sin contorno): el crema se perdía sobre atardeceres, arena y cielo claro.

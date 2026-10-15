@@ -46,6 +46,9 @@ CAP_PX, CAP_Y = CAPS.get("size", 96), CAPS.get("y", 1250)
 # brand.json captions.accent_bg: a soft colour panel behind accent words, for a dark accent colour over busy/dark clothing
 ACC_BG_CSS = (f".cap .acc {{ background: {CAPS['accent_bg']}; padding: .02em .22em .08em; border-radius: .18em; "
               f"text-shadow: none; box-shadow: 0 6px 22px rgba(0,0,0,.28); }}") if CAPS.get("accent_bg") else ""
+# brand.json captions.shadow "strong": a denser (still outline-free) shadow for light captions over bright sky/sand/sunsets
+CAP_SHADOW = ("0 0 3px rgba(0,0,0,.6), 0 0 12px rgba(0,0,0,.45), 0 3px 26px rgba(0,0,0,.55)" if CAPS.get("shadow") == "strong"
+              else "0 2px 14px rgba(0,0,0,.3)")
 W, H, FPS = 1080, 1920, 30                     # authored at 1080x1920; 4K brands render with --resolution portrait-4k
 SAFE = 900                                     # guardrail: no text line may be wider than this (90 px margin each side)
 EM = 0.66                                      # conservative average glyph width (bold display fonts run ~0.6-0.66 em)
@@ -355,7 +358,7 @@ html, body {{ margin: 0; background: #000; overflow: hidden; }}
 .pf video {{ width: 100%; height: 100%; object-fit: cover; display: block; }}
 .glass {{ background: rgba(28,22,34,.34) !important; backdrop-filter: blur(22px) saturate(1.4); -webkit-backdrop-filter: blur(22px) saturate(1.4); border: 1.5px solid rgba(255,255,255,.55); box-shadow: 0 20px 60px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.6); }}
 .card.glass .cr {{ color: #fff !important; border-bottom-color: rgba(255,255,255,.25); }}
-.cap {{ position: absolute; left: 60px; right: 60px; text-align: center; line-height: 1.02; letter-spacing: -.02em; text-shadow: 0 2px 14px rgba(0,0,0,.3); }}
+.cap {{ position: absolute; left: 60px; right: 60px; text-align: center; line-height: 1.02; letter-spacing: -.02em; text-shadow: {CAP_SHADOW}; }}
 .cap .acc {{ text-shadow: 0 0 2px rgba(0,0,0,.25), 0 3px 22px rgba(0,0,0,.5); }}   /* accent colour stays readable over white screens, no outline */
 {ACC_BG_CSS}</style></head>
 <body>
