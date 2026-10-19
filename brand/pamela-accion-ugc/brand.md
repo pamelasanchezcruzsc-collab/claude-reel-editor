@@ -33,7 +33,7 @@ Juguetón tipo scrapbook y dinámico: stickers, zooms (punch-ins) frecuentes, te
 Lots: whoosh, pop, snap, ding.
 
 ## Pacing
-Fast (1.15x, se quitan todas las pausas). Solo se cortan muletillas puras: eh, em, mmm, ah. Nunca cortar "este", "bueno", "pues", "vale". Máximo 60 s.
+Ritmo TikTok (elegido por Pamela, variante C): 1.25x y cortes al ras de la voz, sin pausas ni respiraciones entre frases (`jumpcut.py` con gap 0.12, air 0.06, thresh -27 tras `tighten.py`). Revisar a oído: ruidos sueltos entre tomas (mirar el guion, chasquidos) se cortan a mano. Solo se cortan muletillas puras: eh, em, mmm, ah. Nunca cortar "este", "bueno", "pues", "vale". Máximo 60 s.
 
 ## Call to action
 Cambia en cada reel: preguntar a Pamela cuál quiere. Si no lo dice, usar la que diga en el vídeo. Siempre al final.
