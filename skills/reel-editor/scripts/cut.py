@@ -20,10 +20,13 @@ if os.environ.get("REEL_PREVIEW"): w, h = 1080, 1920          # previews cut at 
 grade = brand.get("grade")
 FADE = 0.012  # tiny audio fades at every join so cuts never click
 
-vp, ap = [], []
+# Each span is its own seeked input (-ss/-t): trimming one shared input makes ffmpeg buffer every decoded frame
+# for the later spans, which runs out of memory on long or 4K sources.
+vp, ap, inputs = [], [], []
 for k, (a, b) in enumerate(spans):
-    vp.append(f"[0:v]trim=start={a}:end={b},setpts=PTS-STARTPTS[v{k}]")
-    ap.append(f"[1:a]atrim=start={a}:end={b},asetpts=PTS-STARTPTS,"
+    inputs += ["-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(src), "-ss", f"{a:.3f}", "-t", f"{b - a:.3f}", "-i", str(audio)]
+    vp.append(f"[{2 * k}:v]setpts=PTS-STARTPTS[v{k}]")
+    ap.append(f"[{2 * k + 1}:a]asetpts=PTS-STARTPTS,"
               f"afade=t=in:d={FADE},afade=t=out:st={max(b - a - FADE, 0):.3f}:d={FADE}[a{k}]")
 n = len(spans)
 post = [f"setpts=PTS/{speed}", f"scale={w}:{h}:force_original_aspect_ratio=increase", f"crop={w}:{h}", "fps=30"]
@@ -42,7 +45,7 @@ print(f"{n} spans, {kept:.1f}s kept -> {kept / speed:.1f}s at {speed}x, {w}x{h}"
 if kept / speed > brand.get("max_seconds", 60):
     print(f"warning: longer than {brand.get('max_seconds', 60)}s - suggest more cuts")
 
-subprocess.run(["nice", "-n", "15", "ffmpeg", "-y", "-v", "error", "-stats", "-i", str(src), "-i", str(audio),
+subprocess.run(["nice", "-n", "15", "ffmpeg", "-y", "-v", "error", "-stats", *inputs,
                 "-filter_complex_script", str(script), "-map", "[vout]", "-map", "[aout]",
                 *((["-c:v", "h264_videotoolbox", "-b:v", "12M"] if sys.platform == "darwin" else ["-c:v", "libx264", "-preset", "veryfast", "-crf", "20"]) if os.environ.get("REEL_PREVIEW") else ["-c:v", "libx264", "-preset", "medium", "-crf", "16"]), "-pix_fmt", "yuv420p",
                 "-c:a", "aac", "-b:a", "256k", "-movflags", "+faststart", str(reel / "master.mp4")], check=True)
