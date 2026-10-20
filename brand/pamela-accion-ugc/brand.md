@@ -27,7 +27,7 @@ Tonos tierra y burdeos.
 Una palabra cada vez, grande y centrada, en minúsculas. Crema con sombra suave; palabra clave de cada frase en burdeos #961D1D. Sin contornos en los subtítulos (el contorno solo en el título del gancho).
 
 ## Graphics
-Juguetón tipo scrapbook y dinámico: stickers, zooms (punch-ins) frecuentes, texto que cambia de posición. Muchos gráficos (busy: uno cada 2-4 s), siempre ilustrando lo que dice esa frase. Sin carpeta de stickers/logo todavía. Sin carrusel obligatorio por ahora.
+Juguetón tipo scrapbook y dinámico: stickers, zooms (punch-ins) frecuentes, texto que cambia de posición. Muchos gráficos (busy: uno cada 2-4 s), siempre ilustrando lo que dice esa frase. Stickers propios en `stickers/` (copiar a `~/reels/assets/stickers/`): emojis con borde blanco tipo scrapbook, chapas burdeos/crema con washi tape amarillo pastel y círculos "paso 1/2/3". `stickers.html` + `shoot.js` (Playwright) generan más con el mismo estilo. Los tutoriales llevan sticker o gráfico en casi cada frase. Sin carrusel obligatorio por ahora.
 
 ## Sound
 Lots: whoosh, pop, snap, ding.
