@@ -47,5 +47,6 @@ Instagram y TikTok · 1080p · versión CapCut activada (vive en España).
 - Nada de tipografías decorativas tipo "Halloween": algo básico y fácil de leer.
 - Siempre dinámico, como el reel de referencia.
 - Transcribir en español (nunca con el modelo solo inglés).
+- Al elegir entre tomas repetidas: usar la que esté mirando a cámara (no la que lee el guion: párpados bajados) y comprobar que el volumen sea igual al resto (si una toma está ~10 dB más baja, el micro falló: descartarla).
 - Palabra clave de los subtítulos (burdeos) siempre sobre un panel crema (`captions.accent_bg`): el burdeos sobre ropa azul u oscura no se lee.
 - Subtítulos con sombra fuerte (`captions.shadow: "strong"`, sin contorno): el crema se perdía sobre atardeceres, arena y cielo claro.
