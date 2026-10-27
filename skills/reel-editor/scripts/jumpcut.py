@@ -42,6 +42,8 @@ for s, e in edl["keep"]:
         else: merged.append(r)
     # stray scraps: a breath with no word in it, or the first sound of a line that was cut right after it
     merged = [r for r in merged if r[1] - r[0] >= 0.5 or any(r[0] - 0.05 <= ws < r[1] and ws < e - 0.25 for ws, _ in words)]
+    # the last word of a span fades out quietly ("recur-so"): never trim the span's tail, keep it to the span end
+    if merged: merged[-1][1] = max(merged[-1][1], e - a.air)
     pre = a.air + 0.03   # a little more room before speech than after: clipped onsets are what the ear notices
     keep += [[round(max(s, r0 - pre), 3), round(min(e, r1 + a.air), 3)] for r0, r1 in merged]
 # a removal shorter than --min-cut saves nothing you can hear but still makes the picture jump: keep it
