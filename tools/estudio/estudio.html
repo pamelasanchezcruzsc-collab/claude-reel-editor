@@ -1,0 +1,311 @@
+<title>Estudio de Reels</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@700;800&family=Poppins:wght@400;500;600&display=swap">
+<style>
+/* Layout: a working studio — chosen version on the left like a phone on the desk, the toolbox on the right; stacks on phones. */
+:root{
+  --bg:#F3EEE9; --panel:#FBF8F5; --ink:#2B1A1C; --muted:#7A6662; --line:#E2D7CF;
+  --brand:#964B53; --pop:#961D1D; --earth:#8F6656; --cream:#E7E1DB; --tape:#F3E3A6;
+  --ok:#3E7A55; --onpop:#FFF8F3;
+  --display:"DM Serif Display",Georgia,serif; --head:"Montserrat","Helvetica Neue",Arial,sans-serif; --body:"Poppins","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1C1415; --panel:#261B1C; --ink:#F1E7E1; --muted:#B49C96; --line:#3E2F2F;
+  --brand:#D08A91; --pop:#E0646A; --earth:#C49A88; --cream:#3A2B2A; --tape:#6B5B2A; --ok:#7FC79A; --onpop:#1C1415; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1C1415; --panel:#261B1C; --ink:#F1E7E1; --muted:#B49C96; --line:#3E2F2F;
+  --brand:#D08A91; --pop:#E0646A; --earth:#C49A88; --cream:#3A2B2A; --tape:#6B5B2A; --ok:#7FC79A; --onpop:#1C1415; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.05;margin:0;color:var(--brand);text-wrap:balance}
+.eyebrow{font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--earth)}
+.sub{color:var(--muted);margin:4px 0 0}
+.status{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pill{font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:var(--cream);color:var(--brand)}
+.pill.ready{background:var(--ok);color:var(--onpop)}
+button{font:inherit;cursor:pointer;border:0;border-radius:10px;padding:9px 14px;background:var(--cream);color:var(--ink)}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.primary{background:var(--pop);color:var(--onpop);font-family:var(--head);font-weight:800;letter-spacing:.02em}
+.ghost{background:transparent;border:1.5px solid var(--line)}
+.small{padding:5px 10px;font-size:12.5px;border-radius:8px}
+section h2{font-family:var(--head);font-weight:800;font-size:15px;margin:0 0 10px;display:flex;flex-wrap:wrap;column-gap:8px;row-gap:2px;align-items:baseline}
+section h2 small{font-family:var(--body);font-weight:400;color:var(--muted);font-size:13px}
+.versions{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,220px));gap:14px}
+.ver{background:var(--panel);border:2px solid var(--line);border-radius:16px;padding:10px;display:flex;flex-direction:column;gap:8px}
+.ver{min-width:0}@media (max-width:520px){.versions{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.ver{padding:8px}}
+.ver.sel{border-color:var(--pop)}
+.ver video{width:100%;aspect-ratio:9/16;background:#000;border-radius:10px;object-fit:cover;max-width:100%}
+.ver .vh{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
+.ver b{font-family:var(--head);font-weight:800}
+.ver p{margin:0;color:var(--muted);font-size:12.5px}
+.studio{display:grid;grid-template-columns:minmax(260px,400px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:820px){.studio{grid-template-columns:minmax(0,1fr)}.stage{position:static;max-width:320px;width:100%;margin:0 auto}}
+.stage{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);display:flex;flex-direction:column;gap:10px}
+.screen{position:relative;width:100%;aspect-ratio:9/16;background:#000;border-radius:18px;overflow:hidden;max-width:100%}
+.screen video{width:100%;height:100%;object-fit:cover;display:block}
+.overlay{position:absolute;inset:0;pointer-events:none}
+.overlay.placing{pointer-events:auto;cursor:crosshair;background:rgba(150,29,29,.12);outline:3px dashed var(--tape);outline-offset:-6px}
+.ov{position:absolute;transform:translate(-50%,-50%);line-height:1;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+.ov img{width:100%;display:block}
+.ov.emo{font-size:var(--fs);filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff)}
+.ov.focus{outline:2px dashed var(--tape);outline-offset:4px}
+.hint{background:var(--tape);color:#3a2d06;border-radius:10px;padding:8px 12px;font-size:13px}
+.transport{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.time{font-variant-numeric:tabular-nums;font-family:var(--head);font-weight:700;color:var(--brand)}
+.tools{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:14px;min-width:0}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tabs button{padding:7px 12px;font-size:13px;border-radius:999px}
+.tabs button[aria-selected="true"]{background:var(--brand);color:var(--onpop)}
+.list{display:flex;flex-direction:column;gap:6px}
+.row{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px;border-radius:10px;background:var(--bg)}
+.row.off{opacity:.45}
+.row.off .label{text-decoration:line-through}
+.row .t{font-variant-numeric:tabular-nums;color:var(--muted);font-size:12.5px}
+.row .label{min-width:0;overflow-wrap:anywhere}
+.row .label em{font-style:normal;color:var(--muted);font-size:12px;display:block}
+.row .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.row input[type=text]{width:100%;font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}
+.capline{display:flex;flex-wrap:wrap;gap:4px;padding:6px 0;border-bottom:1px solid var(--line)}
+.word{padding:3px 7px;border-radius:7px;background:var(--bg);font-size:13.5px}
+.word.acc{background:var(--cream);color:var(--pop);font-family:var(--display);font-size:15px}
+.word.edited{box-shadow:inset 0 -2px 0 var(--earth)}
+.word.now{outline:2px solid var(--brand)}
+.wedit{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px;background:var(--bg);border-radius:10px;margin-top:8px}
+.wedit input[type=text]{flex:1 1 160px;font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.tile{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px;border-radius:12px;background:var(--bg);border:2px solid transparent;font-size:11.5px;color:var(--muted);text-align:center}
+.tile img{height:54px;object-fit:contain;max-width:100%}
+.tile[aria-pressed="true"]{border-color:var(--pop)}
+.emogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:4px}
+.emogrid button{font-size:24px;padding:6px 0;background:var(--bg);border:2px solid transparent;border-radius:10px}
+.emogrid button[aria-pressed="true"]{border-color:var(--pop)}
+.sound{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px;background:var(--bg);border-radius:10px}
+.sound b{font-family:var(--head);font-size:13px}
+.added h3,.tools h3{font-family:var(--head);font-weight:800;font-size:13px;margin:16px 0 8px;color:var(--earth);letter-spacing:.06em;text-transform:uppercase}
+.mini{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.mini input[type=number]{width:64px;font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--ink)}
+.mini input[type=range]{width:110px}
+textarea{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);min-height:64px}
+.empty{color:var(--muted);padding:18px;border:1.5px dashed var(--line);border-radius:14px;text-align:center}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:13px;z-index:20}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Acción UGC · estudio de reels</div>
+      <h1 id="title">Estudio de Reels</h1>
+      <p class="sub" id="subtitle">Elige versión, retoca y avisa a Claude para el render final.</p>
+    </div>
+    <div class="status">
+      <span class="pill" id="statePill">Borrador</span>
+      <span class="sub" id="saveState"></span>
+      <button class="primary" id="readyBtn" type="button">Listo, aplicar cambios</button>
+    </div>
+  </header>
+
+  <div id="notice" class="empty" hidden></div>
+
+  <section id="versionsSec">
+    <h2>1. Versiones <small>toca «Elegir» en la que más te guste</small></h2>
+    <div class="versions" id="versions"><div class="empty">Cargando versiones…</div></div>
+  </section>
+
+  <section>
+    <h2>2. Retoca <small>reproduce, pausa y añade lo que quieras en el segundo exacto</small></h2>
+    <div class="studio">
+      <div class="stage">
+        <div class="screen">
+          <video id="player" playsinline controls preload="metadata"></video>
+          <div class="overlay" id="overlay"></div>
+        </div>
+        <div class="hint" id="placeHint" hidden></div>
+        <div class="transport">
+          <span class="time" id="clock">0:00.0</span>
+          <button class="small ghost" type="button" data-skip="-1">−1 s</button>
+          <button class="small ghost" type="button" data-skip="1">+1 s</button>
+          <button class="small ghost" type="button" id="noteHere">Nota aquí</button>
+        </div>
+      </div>
+
+      <div class="tools">
+        <div class="tabs" role="tablist" id="tabs">
+          <button role="tab" data-tab="graficos" aria-selected="true">Gráficos</button>
+          <button role="tab" data-tab="subtitulos" aria-selected="false">Subtítulos</button>
+          <button role="tab" data-tab="stickers" aria-selected="false">Stickers</button>
+          <button role="tab" data-tab="emojis" aria-selected="false">Emojis</button>
+          <button role="tab" data-tab="sonidos" aria-selected="false">Sonidos</button>
+          <button role="tab" data-tab="notas" aria-selected="false">Notas</button>
+        </div>
+        <div id="panel"></div>
+        <div class="added" id="addedBox"></div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const EMOJIS="✨ 💄 🏠 🎁 💬 👀 💡 🔍 📝 📩 📱 🎬 🎥 ✂️ 📌 📣 🔥 💸 💰 🤑 🛍️ 🧴 🧼 🧺 🍳 ☕ 🌿 🌸 💖 🤍 ❤️ 💕 🥰 😍 😂 🤣 😅 😉 😎 🤩 🥳 😱 🙈 🙌 👏 💪 👉 👇 ☝️ ✅ ❌ ⚠️ ⭐ 🌟 💯 🆕 🆓 🔝 ⏰ 📅 📈 🚀 🎯 🧠 🦸‍♀️ 👩‍💻 👶 👻 🤷‍♀️ 🙏 🤝 🎉 🎈 🧡 💜".split(" ");
+const $=s=>document.querySelector(s);
+const S={reel:null,dec:null,tab:"graficos",place:null,editWord:null,focus:null,dirty:false,saving:false,queued:false,canWrite:true};
+let db=null,assets=null,saveTimer=null;
+const fmt=t=>{t=Math.max(0,t||0);const m=Math.floor(t/60),s=(t%60);return m+":"+(s<10?"0":"")+s.toFixed(1)};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const blob=id=>id?"/_blob/"+id:"";
+const uid=()=>Math.random().toString(36).slice(2,9);
+function toast(m){const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(toast.h);toast.h=setTimeout(()=>t.hidden=true,2600)}
+function newDec(){return{reelId:S.reel?.reelId||"",version:S.reel?.versions?.[0]?.id||"A",removedCards:[],cardText:{},captionEdits:{},added:[],notes:[],status:"draft",updatedAt:""}}
+const ver=()=>S.reel?.versions?.find(v=>v.id===S.dec?.version)||S.reel?.versions?.[0];
+const scale=()=>ver()?.timeScale||1;
+
+/* ---------- saving (one write at a time, coalesced) ---------- */
+function changed(){S.dirty=true;$("#saveState").textContent="Guardando…";clearTimeout(saveTimer);saveTimer=setTimeout(save,700);renderStatus()}
+async function save(){
+  if(!db||!S.dec)return;
+  if(S.saving){S.queued=true;return}
+  S.saving=true;S.dec.updatedAt=new Date().toISOString();
+  try{await db.doc("review/decisions").set(JSON.parse(JSON.stringify(S.dec)));$("#saveState").textContent="Guardado";S.dirty=false}
+  catch(e){$("#saveState").textContent=e?.code==="invalid_argument"?"Solo lectura: no puedes guardar cambios":"No se pudo guardar. Revisa tu conexión.";if(e?.code==="invalid_argument")S.canWrite=false}
+  S.saving=false;if(S.queued){S.queued=false;save()}
+}
+
+/* ---------- render ---------- */
+function renderStatus(){
+  const ready=S.dec?.status==="ready";
+  $("#statePill").textContent=ready?"Listo para aplicar":"Borrador";$("#statePill").classList.toggle("ready",ready);
+  $("#readyBtn").textContent=ready?"Seguir editando":"Listo, aplicar cambios";
+}
+function renderVersions(){
+  const box=$("#versions");const vs=S.reel?.versions||[];
+  if(!vs.length){box.innerHTML='<div class="empty">Aún no hay versiones de este reel.</div>';return}
+  box.innerHTML=vs.map(v=>`<div class="ver ${v.id===S.dec.version?"sel":""}">
+    <video src="${blob(v.video)}" preload="metadata" controls playsinline></video>
+    <div class="vh"><b>${esc(v.label)}</b>${v.id===S.dec.version?'<span class="pill ready">Elegida</span>':`<button class="small primary" data-pick="${esc(v.id)}">Elegir</button>`}</div>
+    <p>${esc(v.desc)} · ${fmt(v.dur)}</p></div>`).join("");
+}
+function loadPlayer(){const v=ver();const p=$("#player");if(v&&p.dataset.src!==v.video){p.dataset.src=v.video;p.src=blob(v.video)}}
+function cardsForVersion(){const v=ver();const ids=v?.cardIds;return (S.reel?.cards||[]).filter(c=>!ids||ids.includes(c.id))}
+function panelGraficos(){
+  const cs=cardsForVersion();
+  if(!cs.length)return'<div class="empty">Esta versión no lleva gráficos.</div>';
+  return '<div class="list">'+cs.map(c=>{const off=S.dec.removedCards.includes(c.id);const txt=S.dec.cardText[c.id]??c.text;
+    return `<div class="row ${off?"off":""}"><span class="t">${fmt(c.start*scale())}</span>
+    <div class="label">${c.text!=null&&!off?`<input type="text" id="ct-${esc(c.id)}" data-cardtext="${esc(c.id)}" value="${esc(txt)}" aria-label="Texto del gráfico">`:esc(c.label)}<em>${esc(c.kind)}</em></div>
+    <div class="acts"><button class="small ghost" data-seek="${c.start*scale()}">Ver</button><button class="small" data-togglecard="${esc(c.id)}">${off?"Recuperar":"Quitar"}</button></div></div>`}).join("")+'</div>';
+}
+function panelSubs(){
+  const caps=S.reel?.captions||[];if(!caps.length)return'<div class="empty">Sin subtítulos.</div>';
+  const lines=[];let cur=[];caps.forEach((w,i)=>{cur.push([w,i]);if(/[.?!]$/.test(w.text)||cur.length>=9){lines.push(cur);cur=[]}});if(cur.length)lines.push(cur);
+  let h='<p class="sub" style="margin:0 0 6px">Toca una palabra para cambiarla o resaltarla.</p>';
+  h+=lines.map(l=>'<div class="capline">'+l.map(([w,i])=>{const e=S.dec.captionEdits[i]||{};const acc=e.accent??w.accent;const txt=e.text??w.text;
+    return `<button class="word ${acc?"acc":""} ${S.dec.captionEdits[i]?"edited":""}" data-word="${i}" data-wt="${w.t}">${esc(txt)}</button>`}).join("")+'</div>').join("");
+  if(S.editWord!=null){const w=caps[S.editWord];const e=S.dec.captionEdits[S.editWord]||{};
+    h+=`<div class="wedit"><input type="text" id="wordText" value="${esc(e.text??w.text)}" aria-label="Texto de la palabra">
+    <label class="mini"><input type="checkbox" id="wordAcc" ${(e.accent??w.accent)?"checked":""}> resaltar</label>
+    <button class="small primary" id="wordSave">Guardar</button><button class="small ghost" id="wordReset">Volver al original</button></div>`}
+  return h;
+}
+function panelStickers(){
+  const st=S.reel?.stickers||[];if(!st.length)return'<div class="empty">No hay stickers cargados.</div>';
+  return '<p class="sub" style="margin:0 0 8px">Elige uno y toca el vídeo donde lo quieres. Aparece en el segundo en que está el vídeo.</p><div class="grid">'+st.map(s=>`<button class="tile" aria-pressed="${S.place?.ref===s.id}" data-place="sticker" data-ref="${esc(s.id)}"><img src="${blob(s.img)}" alt=""><span>${esc(s.name)}</span></button>`).join("")+'</div>';
+}
+function panelEmojis(){
+  return '<p class="sub" style="margin:0 0 8px">Los pongo con tu borde blanco de sticker. Elige uno y toca el vídeo.</p><div class="emogrid">'+EMOJIS.map(e=>`<button aria-pressed="${S.place?.ref===e}" data-place="emoji" data-ref="${e}" aria-label="Emoji ${e}">${e}</button>`).join("")+'</div>';
+}
+function panelSonidos(){
+  const ss=S.reel?.sounds||[];if(!ss.length)return'<div class="empty">No hay sonidos cargados.</div>';
+  return '<p class="sub" style="margin:0 0 8px">Escúchalo y añádelo en el segundo actual del vídeo.</p><div class="list">'+ss.map(s=>`<div class="sound"><button class="small ghost" data-play="${esc(s.id)}" aria-label="Escuchar ${esc(s.name)}">▶</button><div><b>${esc(s.name)}</b><div class="sub" style="margin:0;font-size:12px">${esc(s.desc||"")}</div></div><button class="small primary" data-addsound="${esc(s.id)}">Añadir aquí</button></div>`).join("")+'</div>';
+}
+function panelNotas(){
+  return `<p class="sub" style="margin:0 0 8px">Pausa el vídeo donde quieras comentar algo y escríbelo.</p><textarea id="noteText" placeholder="Ej.: aquí hay un corte raro"></textarea>
+  <div style="display:flex;gap:8px;margin-top:8px;align-items:center"><button class="small primary" id="noteAdd">Añadir nota en ${fmt($("#player").currentTime)}</button></div>`;
+}
+function renderPanel(){
+  document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===S.tab));
+  const p={graficos:panelGraficos,subtitulos:panelSubs,stickers:panelStickers,emojis:panelEmojis,sonidos:panelSonidos,notas:panelNotas}[S.tab];
+  $("#panel").innerHTML=p();renderAdded();
+}
+function itemLabel(a){if(a.kind==="emoji")return a.ref;if(a.kind==="sticker")return (S.reel.stickers.find(s=>s.id===a.ref)||{}).name||"sticker";return "🔊 "+((S.reel.sounds.find(s=>s.id===a.ref)||{}).name||"sonido")}
+function renderAdded(){
+  const mine=S.dec.added.filter(a=>a.version===S.dec.version);const notes=S.dec.notes.filter(n=>n.version===S.dec.version);
+  let h="";
+  if(mine.length){h+='<h3>Lo que has añadido</h3><div class="list">'+mine.sort((a,b)=>a.t-b.t).map(a=>`<div class="row"><span class="t">${fmt(a.t)}</span>
+    <div class="label">${esc(itemLabel(a))}<div class="mini">${a.kind!=="sound"?`dura <input type="number" step="0.5" min="0.5" id="d-${a.id}" data-dur="${a.id}" value="${a.dur}"> s · tamaño <input type="range" min="80" max="700" id="s-${a.id}" data-size="${a.id}" value="${a.size}">`:`volumen <input type="range" min="-24" max="0" id="v-${a.id}" data-vol="${a.id}" value="${a.db}">`}</div></div>
+    <div class="acts"><button class="small ghost" data-seek="${a.t}">Ver</button><button class="small" data-del="${a.id}">Quitar</button></div></div>`).join("")+'</div>'}
+  if(notes.length){h+='<h3>Notas para Claude</h3><div class="list">'+notes.map(n=>`<div class="row"><span class="t">${fmt(n.t)}</span><div class="label">${esc(n.text)}</div><div class="acts"><button class="small ghost" data-seek="${n.t}">Ver</button><button class="small" data-delnote="${n.id}">Quitar</button></div></div>`).join("")+'</div>'}
+  $("#addedBox").innerHTML=h;renderOverlay();
+}
+function renderOverlay(){
+  const ov=$("#overlay");const t=$("#player").currentTime||0;const W=ov.clientWidth||1;
+  ov.innerHTML=S.dec.added.filter(a=>a.version===S.dec.version&&a.kind!=="sound"&&t>=a.t&&t<=a.t+a.dur).map(a=>{
+    const pos=`left:${a.x/10.8}%;top:${a.y/19.2}%;`;
+    if(a.kind==="emoji")return `<div class="ov emo ${S.focus===a.id?"focus":""}" style="${pos}--fs:${(a.size/1080*W).toFixed(0)}px">${a.ref}</div>`;
+    const s=S.reel.stickers.find(x=>x.id===a.ref);return `<div class="ov ${S.focus===a.id?"focus":""}" style="${pos}width:${a.size/10.8}%"><img src="${blob(s?.img)}" alt=""></div>`}).join("");
+  ov.classList.toggle("placing",!!S.place);
+  $("#placeHint").hidden=!S.place;if(S.place)$("#placeHint").textContent=`Toca el vídeo donde quieres ${S.place.kind==="emoji"?"el "+S.place.ref:"el sticker"} (en ${fmt(t)}). Pulsa otra vez el mismo para cancelar.`;
+}
+function renderAll(){
+  if(!S.reel){$("#versions").innerHTML='<div class="empty">Claude aún no ha cargado ningún reel aquí.</div>';return}
+  $("#title").textContent=S.reel.title||"Estudio de Reels";$("#subtitle").textContent=S.reel.subtitle||"";
+  renderStatus();renderVersions();loadPlayer();renderPanel();
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b||!S.dec)return;const d=b.dataset;const p=$("#player");
+  if(d.tab){S.tab=d.tab;S.editWord=null;renderPanel();return}
+  if(d.pick){S.dec.version=d.pick;changed();renderAll();return}
+  if(d.seek!=null){p.currentTime=+d.seek;p.pause();renderOverlay();return}
+  if(d.skip){p.currentTime=Math.max(0,p.currentTime+ +d.skip);return}
+  if(d.togglecard){const r=S.dec.removedCards;const i=r.indexOf(d.togglecard);i<0?r.push(d.togglecard):r.splice(i,1);changed();renderPanel();return}
+  if(d.word!=null){S.editWord=+d.word;p.currentTime=+d.wt*scale();p.pause();renderPanel();return}
+  if(b.id==="wordSave"){const i=S.editWord,w=S.reel.captions[i];const text=$("#wordText").value.trim()||w.text;const accent=$("#wordAcc").checked;
+    if(text===w.text&&accent===!!w.accent)delete S.dec.captionEdits[i];else S.dec.captionEdits[i]={text,accent};S.editWord=null;changed();renderPanel();return}
+  if(b.id==="wordReset"){delete S.dec.captionEdits[S.editWord];S.editWord=null;changed();renderPanel();return}
+  if(d.place){S.place=(S.place&&S.place.ref===d.ref)?null:{kind:d.place,ref:d.ref};p.pause();renderPanel();return}
+  if(d.play){const s=S.reel.sounds.find(x=>x.id===d.play);const a=new Audio(blob(s.audio));a.play().catch(()=>toast("No se pudo reproducir el sonido"));return}
+  if(d.addsound){S.dec.added.push({id:uid(),kind:"sound",ref:d.addsound,t:+p.currentTime.toFixed(2),db:-12,version:S.dec.version});changed();renderAdded();toast("Sonido añadido en "+fmt(p.currentTime));return}
+  if(d.del){S.dec.added=S.dec.added.filter(a=>a.id!==d.del);changed();renderAdded();return}
+  if(d.delnote){S.dec.notes=S.dec.notes.filter(n=>n.id!==d.delnote);changed();renderAdded();return}
+  if(b.id==="noteHere"){S.tab="notas";p.pause();renderPanel();$("#noteText")?.focus();return}
+  if(b.id==="noteAdd"){const txt=$("#noteText").value.trim();if(!txt)return;S.dec.notes.push({id:uid(),t:+p.currentTime.toFixed(2),text:txt,version:S.dec.version});changed();renderPanel();toast("Nota guardada");return}
+  if(b.id==="readyBtn"){S.dec.status=S.dec.status==="ready"?"draft":"ready";changed();if(S.dec.status==="ready")toast("Hecho. Ahora escribe a Claude: «aplica los cambios»");return}
+});
+document.addEventListener("change",e=>{
+  const el=e.target,d=el.dataset;if(!S.dec)return;
+  if(d.cardtext){const c=S.reel.cards.find(x=>x.id===d.cardtext);if(el.value===c.text)delete S.dec.cardText[c.id];else S.dec.cardText[c.id]=el.value;changed()}
+  const f=id=>S.dec.added.find(a=>a.id===id);
+  if(d.dur){f(d.dur).dur=Math.max(.5,+el.value||2);changed();renderOverlay()}
+  if(d.size){f(d.size).size=+el.value;changed();renderOverlay()}
+  if(d.vol){f(d.vol).db=+el.value;changed()}
+});
+document.addEventListener("input",e=>{const d=e.target.dataset;if(d.size&&S.dec){const a=S.dec.added.find(x=>x.id===d.size);a.size=+e.target.value;S.focus=a.id;renderOverlay()}});
+$("#overlay").addEventListener("click",e=>{
+  if(!S.place)return;const r=e.currentTarget.getBoundingClientRect();const p=$("#player");
+  const a={id:uid(),kind:S.place.kind,ref:S.place.ref,t:+p.currentTime.toFixed(2),dur:2,x:Math.round((e.clientX-r.left)/r.width*1080),y:Math.round((e.clientY-r.top)/r.height*1920),size:S.place.kind==="emoji"?200:340,version:S.dec.version};
+  S.dec.added.push(a);S.focus=a.id;S.place=null;changed();renderPanel();toast("Añadido en "+fmt(a.t));
+});
+const player=$("#player");
+player.addEventListener("timeupdate",()=>{$("#clock").textContent=fmt(player.currentTime);renderOverlay();if(S.tab==="notas"){const b=$("#noteAdd");if(b)b.textContent="Añadir nota en "+fmt(player.currentTime)}});
+player.addEventListener("seeked",renderOverlay);
+window.addEventListener("resize",renderOverlay);
+
+/* ---------- boot ---------- */
+(async()=>{
+  const timer=setTimeout(()=>{if(!S.reel){$("#versions").innerHTML='<div class="empty">No consigo cargar los datos todavía. Revisa tu conexión y vuelve a abrir la página.</div>'}},10000);
+  db=await window.claude?.use?.("db");
+  const user=await window.claude?.use?.("user");
+  if(!db){clearTimeout(timer);const n=$("#notice");n.hidden=false;n.textContent="Abre esta página con tu cuenta de Claude para ver y guardar tus cambios.";return}
+  if(user&&user.can&&(await user.can("data.write"))===false){S.canWrite=false;$("#readyBtn").hidden=true;$("#saveState").textContent="Solo lectura"}
+  db.doc("reel/current").onSnapshot(s=>{clearTimeout(timer);S.reel=s.exists?s.data():null;if(S.dec&&S.reel&&S.dec.reelId!==S.reel.reelId)S.dec=newDec();if(!S.dec)S.dec=newDec();renderAll()},
+    ()=>{clearTimeout(timer);$("#versions").innerHTML='<div class="empty">No se pudieron cargar los datos del reel.</div>'});
+  db.doc("review/decisions").onSnapshot(s=>{if(S.dirty||S.saving)return;const d=s.exists?JSON.parse(JSON.stringify(s.data())):null;
+    if(d&&(!S.reel||d.reelId===S.reel.reelId)){S.dec=Object.assign(newDec(),d)}else if(!S.dec){S.dec=newDec()}if(S.reel)renderAll()},()=>{});
+})();
+</script>
