@@ -162,6 +162,7 @@ for i, c in enumerate(edit.get("cards", [])):
     a, b, cid = c["start"], c.get("end") or phrase_end(c["start"]), f"k{i}"
     b = min(b, DUR)
     kind = c["type"]
+    if kind != "title" and c.get("quiet") is True: quiet.append((a, b))   # any card: "quiet": true hides captions while it shows
     if kind == "title":
         lines = [case(x.strip()) for x in c["text"].split("/")]
         if c.get("quiet", True): quiet.append((a, b))                    # the hook says it: captions step aside ("quiet": false keeps them)
