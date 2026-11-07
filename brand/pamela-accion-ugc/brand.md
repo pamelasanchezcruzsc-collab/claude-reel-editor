@@ -51,3 +51,4 @@ Instagram y TikTok · 1080p · versión CapCut activada (vive en España).
 - Palabra clave de los subtítulos (burdeos) siempre sobre un panel crema (`captions.accent_bg`): el burdeos sobre ropa azul u oscura no se lee.
 - Subtítulos con sombra fuerte (`captions.shadow: "strong"`, sin contorno): el crema se perdía sobre atardeceres, arena y cielo claro.
 - Audio: su micro de solapa graba limpio (≈ -60 dB de ruido). Usar siempre `clean_audio.sh --no-denoise`: el quitarruidos le deja un sonido raro. No poner dos pops a la vez (sticker que entra con un rótulo: "sfx": false).
+- Rótulos (tag) y tarjetas cuando sale a cámara: a la altura del pecho (tag y≈1030, card y≈930 con "quiet": true), nunca a la altura de la boca/barbilla (los punch-ins acercan la cara).
