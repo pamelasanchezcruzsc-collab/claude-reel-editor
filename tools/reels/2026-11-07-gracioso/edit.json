@@ -1,0 +1,361 @@
+{
+ "captions": [
+  {
+   "start": 0.32,
+   "end": 1.04,
+   "words": [
+    {
+     "text": "Realidad",
+     "t": 0.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.04,
+   "end": 1.2,
+   "words": [
+    {
+     "text": "de",
+     "t": 1.04,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.2,
+   "end": 1.52,
+   "words": [
+    {
+     "text": "cualquier",
+     "t": 1.2,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.52,
+   "end": 1.92,
+   "words": [
+    {
+     "text": "creador",
+     "t": 1.52,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 1.92,
+   "end": 2.0,
+   "words": [
+    {
+     "text": "de",
+     "t": 1.92,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.0,
+   "end": 2.72,
+   "words": [
+    {
+     "text": "contenido",
+     "t": 2.0,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.72,
+   "end": 3.04,
+   "words": [
+    {
+     "text": "El",
+     "t": 2.72,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.04,
+   "end": 3.6,
+   "words": [
+    {
+     "text": "look",
+     "t": 3.04,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.6,
+   "end": 3.84,
+   "words": [
+    {
+     "text": "por",
+     "t": 3.6,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.84,
+   "end": 5.12,
+   "words": [
+    {
+     "text": "arriba",
+     "t": 3.84,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 5.12,
+   "end": 5.44,
+   "words": [
+    {
+     "text": "El",
+     "t": 5.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 5.44,
+   "end": 6.08,
+   "words": [
+    {
+     "text": "look",
+     "t": 5.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 6.08,
+   "end": 6.4,
+   "words": [
+    {
+     "text": "por",
+     "t": 6.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 6.4,
+   "end": 8.28,
+   "words": [
+    {
+     "text": "abajo",
+     "t": 6.4,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 8.64,
+   "end": 9.28,
+   "words": [
+    {
+     "text": "Decidme",
+     "t": 8.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.28,
+   "end": 9.36,
+   "words": [
+    {
+     "text": "que",
+     "t": 9.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.36,
+   "end": 9.44,
+   "words": [
+    {
+     "text": "no",
+     "t": 9.36,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.44,
+   "end": 9.68,
+   "words": [
+    {
+     "text": "soy",
+     "t": 9.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.68,
+   "end": 9.76,
+   "words": [
+    {
+     "text": "la",
+     "t": 9.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.76,
+   "end": 10.16,
+   "words": [
+    {
+     "text": "única",
+     "t": 9.76,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 10.16,
+   "end": 10.4,
+   "words": [
+    {
+     "text": "por",
+     "t": 10.16,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 10.4,
+   "end": 11.04,
+   "words": [
+    {
+     "text": "favor",
+     "t": 10.4,
+     "accent": false
+    }
+   ]
+  }
+ ],
+ "punch": [
+  0.32,
+  2.72,
+  8.64
+ ],
+ "cards": [
+  {
+   "type": "title",
+   "start": 0.0,
+   "end": 2.6,
+   "text": "realidad de / cualquier creador",
+   "y": 860
+  },
+  {
+   "type": "tag",
+   "start": 2.72,
+   "end": 4.65,
+   "text": "el look por arriba",
+   "y": 1030,
+   "sfx": {
+    "name": "chime",
+    "db": -12
+   }
+  },
+  {
+   "type": "sticker",
+   "start": 3.1,
+   "end": 4.65,
+   "src": "stickers/crown.png",
+   "x": 880,
+   "y": 620,
+   "size": 220,
+   "rotate": 12,
+   "sfx": false
+  },
+  {
+   "type": "sticker",
+   "start": 3.4,
+   "end": 4.65,
+   "src": "stickers/sparkles.png",
+   "x": 190,
+   "y": 560,
+   "size": 180,
+   "rotate": -10,
+   "sfx": false
+  },
+  {
+   "type": "tag",
+   "start": 5.12,
+   "end": 8.5,
+   "text": "el look por abajo",
+   "y": 300,
+   "sfx": {
+    "name": "boing",
+    "db": -10
+   },
+   "quiet": true
+  },
+  {
+   "type": "sticker",
+   "start": 6.5,
+   "end": 8.5,
+   "src": "stickers/slipper.png",
+   "x": 220,
+   "y": 1480,
+   "size": 220,
+   "rotate": -14,
+   "sfx": {
+    "name": "pop",
+    "db": -14
+   }
+  },
+  {
+   "type": "sticker",
+   "start": 7.0,
+   "end": 8.5,
+   "src": "stickers/monkey.png",
+   "x": 860,
+   "y": 1380,
+   "size": 240,
+   "rotate": 10,
+   "sfx": {
+    "name": "pop",
+    "db": -14
+   }
+  },
+  {
+   "type": "tag",
+   "start": 7.0,
+   "end": 8.5,
+   "text": "lo que no sale en cámara",
+   "y": 420,
+   "sfx": false
+  },
+  {
+   "type": "sticker",
+   "start": 8.64,
+   "end": 10.93,
+   "src": "stickers/laugh.png",
+   "x": 880,
+   "y": 560,
+   "size": 230,
+   "rotate": 10,
+   "sfx": {
+    "name": "pop",
+    "db": -14
+   }
+  },
+  {
+   "type": "cta",
+   "start": 9.4,
+   "end": 10.93,
+   "text": "¿te pasa? COMENTA"
+  }
+ ]
+}
