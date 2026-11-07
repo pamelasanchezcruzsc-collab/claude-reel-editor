@@ -50,3 +50,4 @@ Instagram y TikTok · 1080p · versión CapCut activada (vive en España).
 - Al elegir entre tomas repetidas: usar la que esté mirando a cámara (no la que lee el guion: párpados bajados) y comprobar que el volumen sea igual al resto (si una toma está ~10 dB más baja, el micro falló: descartarla).
 - Palabra clave de los subtítulos (burdeos) siempre sobre un panel crema (`captions.accent_bg`): el burdeos sobre ropa azul u oscura no se lee.
 - Subtítulos con sombra fuerte (`captions.shadow: "strong"`, sin contorno): el crema se perdía sobre atardeceres, arena y cielo claro.
+- Audio: su micro de solapa graba limpio (≈ -60 dB de ruido). Usar siempre `clean_audio.sh --no-denoise`: el quitarruidos le deja un sonido raro. No poner dos pops a la vez (sticker que entra con un rótulo: "sfx": false).
