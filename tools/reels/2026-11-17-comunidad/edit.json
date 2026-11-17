@@ -1,0 +1,1931 @@
+{
+ "captions": [
+  {
+   "start": 0.08,
+   "end": 0.4,
+   "words": [
+    {
+     "text": "Hola",
+     "t": 0.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 0.4,
+   "end": 0.64,
+   "words": [
+    {
+     "text": "hola",
+     "t": 0.4,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 0.64,
+   "end": 0.96,
+   "words": [
+    {
+     "text": "chicas",
+     "t": 0.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 0.96,
+   "end": 1.12,
+   "words": [
+    {
+     "text": "Si",
+     "t": 0.96,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.12,
+   "end": 1.36,
+   "words": [
+    {
+     "text": "estáis",
+     "t": 1.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.36,
+   "end": 1.68,
+   "words": [
+    {
+     "text": "empezando",
+     "t": 1.36,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.68,
+   "end": 1.76,
+   "words": [
+    {
+     "text": "en",
+     "t": 1.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.76,
+   "end": 1.84,
+   "words": [
+    {
+     "text": "el",
+     "t": 1.76,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 1.84,
+   "end": 2.0,
+   "words": [
+    {
+     "text": "mundo",
+     "t": 1.84,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.0,
+   "end": 2.4,
+   "words": [
+    {
+     "text": "UGC",
+     "t": 2.0,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.4,
+   "end": 2.56,
+   "words": [
+    {
+     "text": "o",
+     "t": 2.4,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.56,
+   "end": 2.64,
+   "words": [
+    {
+     "text": "ya",
+     "t": 2.56,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.64,
+   "end": 2.88,
+   "words": [
+    {
+     "text": "habéis",
+     "t": 2.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 2.88,
+   "end": 3.2,
+   "words": [
+    {
+     "text": "comenzado",
+     "t": 2.88,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.2,
+   "end": 3.28,
+   "words": [
+    {
+     "text": "a",
+     "t": 3.2,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.28,
+   "end": 3.44,
+   "words": [
+    {
+     "text": "crear",
+     "t": 3.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.44,
+   "end": 3.76,
+   "words": [
+    {
+     "text": "contenido",
+     "t": 3.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.76,
+   "end": 3.84,
+   "words": [
+    {
+     "text": "y",
+     "t": 3.76,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 3.84,
+   "end": 4.16,
+   "words": [
+    {
+     "text": "queréis",
+     "t": 3.84,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 4.16,
+   "end": 4.32,
+   "words": [
+    {
+     "text": "seguir",
+     "t": 4.16,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 4.32,
+   "end": 4.8,
+   "words": [
+    {
+     "text": "mejorando",
+     "t": 4.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 4.8,
+   "end": 4.88,
+   "words": [
+    {
+     "text": "os",
+     "t": 4.8,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 4.88,
+   "end": 5.12,
+   "words": [
+    {
+     "text": "quiero",
+     "t": 4.88,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 5.12,
+   "end": 5.36,
+   "words": [
+    {
+     "text": "contar",
+     "t": 5.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 5.36,
+   "end": 5.52,
+   "words": [
+    {
+     "text": "una",
+     "t": 5.36,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 5.52,
+   "end": 6.08,
+   "words": [
+    {
+     "text": "cosita",
+     "t": 5.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 6.08,
+   "end": 6.32,
+   "words": [
+    {
+     "text": "Tengo",
+     "t": 6.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 6.32,
+   "end": 6.48,
+   "words": [
+    {
+     "text": "una",
+     "t": 6.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 6.48,
+   "end": 6.88,
+   "words": [
+    {
+     "text": "comunidad",
+     "t": 6.48,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 6.88,
+   "end": 7.36,
+   "words": [
+    {
+     "text": "gratuita",
+     "t": 6.88,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 7.36,
+   "end": 7.52,
+   "words": [
+    {
+     "text": "de",
+     "t": 7.36,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 7.52,
+   "end": 8.0,
+   "words": [
+    {
+     "text": "creadoras",
+     "t": 7.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 8.0,
+   "end": 8.56,
+   "words": [
+    {
+     "text": "UGC",
+     "t": 8.0,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 8.56,
+   "end": 8.64,
+   "words": [
+    {
+     "text": "en",
+     "t": 8.56,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 8.64,
+   "end": 9.12,
+   "words": [
+    {
+     "text": "WhatsApp",
+     "t": 8.64,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 9.12,
+   "end": 9.2,
+   "words": [
+    {
+     "text": "La",
+     "t": 9.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.2,
+   "end": 9.44,
+   "words": [
+    {
+     "text": "idea",
+     "t": 9.2,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.44,
+   "end": 9.52,
+   "words": [
+    {
+     "text": "es",
+     "t": 9.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.52,
+   "end": 9.68,
+   "words": [
+    {
+     "text": "que",
+     "t": 9.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 9.68,
+   "end": 10.0,
+   "words": [
+    {
+     "text": "tengamos",
+     "t": 9.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 10.0,
+   "end": 10.08,
+   "words": [
+    {
+     "text": "un",
+     "t": 10.0,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 10.08,
+   "end": 10.48,
+   "words": [
+    {
+     "text": "espacio",
+     "t": 10.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 10.48,
+   "end": 10.64,
+   "words": [
+    {
+     "text": "para",
+     "t": 10.48,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 10.64,
+   "end": 11.04,
+   "words": [
+    {
+     "text": "compartir",
+     "t": 10.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 11.04,
+   "end": 11.6,
+   "words": [
+    {
+     "text": "dudas",
+     "t": 11.04,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 11.6,
+   "end": 11.92,
+   "words": [
+    {
+     "text": "hablar",
+     "t": 11.6,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 11.92,
+   "end": 12.08,
+   "words": [
+    {
+     "text": "de",
+     "t": 11.92,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 12.08,
+   "end": 12.16,
+   "words": [
+    {
+     "text": "lo",
+     "t": 12.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 12.16,
+   "end": 12.32,
+   "words": [
+    {
+     "text": "que",
+     "t": 12.16,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 12.32,
+   "end": 12.56,
+   "words": [
+    {
+     "text": "estamos",
+     "t": 12.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 12.56,
+   "end": 12.96,
+   "words": [
+    {
+     "text": "haciendo",
+     "t": 12.56,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 12.96,
+   "end": 13.12,
+   "words": [
+    {
+     "text": "y",
+     "t": 12.96,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 13.12,
+   "end": 13.76,
+   "words": [
+    {
+     "text": "ayudarnos",
+     "t": 13.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 13.76,
+   "end": 14.16,
+   "words": [
+    {
+     "text": "dando",
+     "t": 13.76,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 14.16,
+   "end": 14.4,
+   "words": [
+    {
+     "text": "esos",
+     "t": 14.16,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 14.4,
+   "end": 14.8,
+   "words": [
+    {
+     "text": "pequeños",
+     "t": 14.4,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 14.8,
+   "end": 15.28,
+   "words": [
+    {
+     "text": "pasos",
+     "t": 14.8,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 15.28,
+   "end": 15.44,
+   "words": [
+    {
+     "text": "que",
+     "t": 15.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 15.44,
+   "end": 15.52,
+   "words": [
+    {
+     "text": "a",
+     "t": 15.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 15.52,
+   "end": 15.92,
+   "words": [
+    {
+     "text": "veces",
+     "t": 15.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 15.92,
+   "end": 16.16,
+   "words": [
+    {
+     "text": "vamos",
+     "t": 15.92,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 16.16,
+   "end": 16.64,
+   "words": [
+    {
+     "text": "dejando",
+     "t": 16.16,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 16.64,
+   "end": 17.44,
+   "words": [
+    {
+     "text": "pendiente",
+     "t": 16.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 17.44,
+   "end": 17.68,
+   "words": [
+    {
+     "text": "También",
+     "t": 17.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 17.68,
+   "end": 17.84,
+   "words": [
+    {
+     "text": "os",
+     "t": 17.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 17.84,
+   "end": 18.0,
+   "words": [
+    {
+     "text": "he",
+     "t": 17.84,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 18.0,
+   "end": 18.32,
+   "words": [
+    {
+     "text": "compartido",
+     "t": 18.0,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 18.32,
+   "end": 18.4,
+   "words": [
+    {
+     "text": "por",
+     "t": 18.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 18.4,
+   "end": 18.64,
+   "words": [
+    {
+     "text": "allí",
+     "t": 18.4,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 18.64,
+   "end": 18.96,
+   "words": [
+    {
+     "text": "recursos",
+     "t": 18.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 18.96,
+   "end": 19.12,
+   "words": [
+    {
+     "text": "como",
+     "t": 18.96,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 19.12,
+   "end": 19.2,
+   "words": [
+    {
+     "text": "el",
+     "t": 19.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 19.2,
+   "end": 19.6,
+   "words": [
+    {
+     "text": "evaluador",
+     "t": 19.2,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 19.6,
+   "end": 19.68,
+   "words": [
+    {
+     "text": "de",
+     "t": 19.6,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 19.68,
+   "end": 20.08,
+   "words": [
+    {
+     "text": "perfiles",
+     "t": 19.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 20.08,
+   "end": 20.64,
+   "words": [
+    {
+     "text": "UGC",
+     "t": 20.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 20.64,
+   "end": 20.8,
+   "words": [
+    {
+     "text": "que",
+     "t": 20.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 20.8,
+   "end": 21.28,
+   "words": [
+    {
+     "text": "preparé",
+     "t": 20.8,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 21.28,
+   "end": 21.36,
+   "words": [
+    {
+     "text": "para",
+     "t": 21.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 21.36,
+   "end": 21.84,
+   "words": [
+    {
+     "text": "ayudaros",
+     "t": 21.36,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 21.84,
+   "end": 21.92,
+   "words": [
+    {
+     "text": "a",
+     "t": 21.84,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 21.92,
+   "end": 22.32,
+   "words": [
+    {
+     "text": "investigar",
+     "t": 21.92,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 22.32,
+   "end": 22.64,
+   "words": [
+    {
+     "text": "marcas",
+     "t": 22.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 22.64,
+   "end": 22.72,
+   "words": [
+    {
+     "text": "y",
+     "t": 22.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 22.72,
+   "end": 23.04,
+   "words": [
+    {
+     "text": "empezar",
+     "t": 22.72,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 23.04,
+   "end": 23.12,
+   "words": [
+    {
+     "text": "a",
+     "t": 23.04,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 23.12,
+   "end": 23.44,
+   "words": [
+    {
+     "text": "trabajar",
+     "t": 23.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 23.44,
+   "end": 23.6,
+   "words": [
+    {
+     "text": "con",
+     "t": 23.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 23.6,
+   "end": 24.0,
+   "words": [
+    {
+     "text": "vuestras",
+     "t": 23.6,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 24.0,
+   "end": 24.72,
+   "words": [
+    {
+     "text": "propuestas",
+     "t": 24.0,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 24.72,
+   "end": 24.88,
+   "words": [
+    {
+     "text": "No",
+     "t": 24.72,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 24.88,
+   "end": 25.12,
+   "words": [
+    {
+     "text": "hace",
+     "t": 24.88,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 25.12,
+   "end": 25.36,
+   "words": [
+    {
+     "text": "falta",
+     "t": 25.12,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 25.36,
+   "end": 25.44,
+   "words": [
+    {
+     "text": "que",
+     "t": 25.36,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 25.44,
+   "end": 25.76,
+   "words": [
+    {
+     "text": "tengáis",
+     "t": 25.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 25.76,
+   "end": 25.84,
+   "words": [
+    {
+     "text": "un",
+     "t": 25.76,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 25.84,
+   "end": 26.32,
+   "words": [
+    {
+     "text": "porfolio",
+     "t": 25.84,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 26.32,
+   "end": 26.72,
+   "words": [
+    {
+     "text": "perfecto",
+     "t": 26.32,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 26.72,
+   "end": 26.88,
+   "words": [
+    {
+     "text": "ni",
+     "t": 26.72,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 26.88,
+   "end": 27.04,
+   "words": [
+    {
+     "text": "que",
+     "t": 26.88,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 27.04,
+   "end": 27.28,
+   "words": [
+    {
+     "text": "ya",
+     "t": 27.04,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 27.28,
+   "end": 27.68,
+   "words": [
+    {
+     "text": "hayáis",
+     "t": 27.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 27.68,
+   "end": 28.08,
+   "words": [
+    {
+     "text": "conseguido",
+     "t": 27.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 28.08,
+   "end": 28.8,
+   "words": [
+    {
+     "text": "colaboraciones",
+     "t": 28.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 28.8,
+   "end": 28.96,
+   "words": [
+    {
+     "text": "Me",
+     "t": 28.8,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 28.96,
+   "end": 29.28,
+   "words": [
+    {
+     "text": "interesa",
+     "t": 28.96,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 29.28,
+   "end": 29.52,
+   "words": [
+    {
+     "text": "mucho",
+     "t": 29.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 29.52,
+   "end": 29.76,
+   "words": [
+    {
+     "text": "saber",
+     "t": 29.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 29.76,
+   "end": 29.92,
+   "words": [
+    {
+     "text": "en",
+     "t": 29.76,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 29.92,
+   "end": 30.08,
+   "words": [
+    {
+     "text": "qué",
+     "t": 29.92,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 30.08,
+   "end": 30.32,
+   "words": [
+    {
+     "text": "punto",
+     "t": 30.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 30.32,
+   "end": 30.56,
+   "words": [
+    {
+     "text": "está",
+     "t": 30.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 30.56,
+   "end": 30.8,
+   "words": [
+    {
+     "text": "cada",
+     "t": 30.56,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 30.8,
+   "end": 31.2,
+   "words": [
+    {
+     "text": "una",
+     "t": 30.8,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 31.2,
+   "end": 31.52,
+   "words": [
+    {
+     "text": "porque",
+     "t": 31.2,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 31.52,
+   "end": 31.68,
+   "words": [
+    {
+     "text": "no",
+     "t": 31.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 31.68,
+   "end": 31.92,
+   "words": [
+    {
+     "text": "todas",
+     "t": 31.68,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 31.92,
+   "end": 32.48,
+   "words": [
+    {
+     "text": "necesitamos",
+     "t": 31.92,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 32.48,
+   "end": 32.64,
+   "words": [
+    {
+     "text": "lo",
+     "t": 32.48,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 32.64,
+   "end": 32.96,
+   "words": [
+    {
+     "text": "mismo",
+     "t": 32.64,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 32.96,
+   "end": 33.2,
+   "words": [
+    {
+     "text": "Y",
+     "t": 32.96,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 33.2,
+   "end": 33.28,
+   "words": [
+    {
+     "text": "si",
+     "t": 33.2,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 33.28,
+   "end": 33.44,
+   "words": [
+    {
+     "text": "os",
+     "t": 33.28,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 33.44,
+   "end": 33.84,
+   "words": [
+    {
+     "text": "parece",
+     "t": 33.44,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 33.84,
+   "end": 34.08,
+   "words": [
+    {
+     "text": "para",
+     "t": 33.84,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 34.08,
+   "end": 34.32,
+   "words": [
+    {
+     "text": "entrar",
+     "t": 34.08,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 34.32,
+   "end": 34.4,
+   "words": [
+    {
+     "text": "a",
+     "t": 34.32,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 34.4,
+   "end": 34.8,
+   "words": [
+    {
+     "text": "escribir",
+     "t": 34.4,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 34.8,
+   "end": 35.52,
+   "words": [
+    {
+     "text": "comunidad",
+     "t": 34.8,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 35.52,
+   "end": 35.6,
+   "words": [
+    {
+     "text": "en",
+     "t": 35.52,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 35.6,
+   "end": 35.76,
+   "words": [
+    {
+     "text": "este",
+     "t": 35.6,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 35.76,
+   "end": 36.0,
+   "words": [
+    {
+     "text": "vídeo",
+     "t": 35.76,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 36.0,
+   "end": 36.16,
+   "words": [
+    {
+     "text": "y",
+     "t": 36.0,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 36.16,
+   "end": 36.4,
+   "words": [
+    {
+     "text": "os",
+     "t": 36.16,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 36.4,
+   "end": 36.72,
+   "words": [
+    {
+     "text": "envío",
+     "t": 36.4,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 36.72,
+   "end": 36.8,
+   "words": [
+    {
+     "text": "el",
+     "t": 36.72,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 36.8,
+   "end": 37.3,
+   "words": [
+    {
+     "text": "enlace",
+     "t": 36.8,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 37.3,
+   "end": 37.62,
+   "words": [
+    {
+     "text": "Es",
+     "t": 37.3,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 37.62,
+   "end": 38.02,
+   "words": [
+    {
+     "text": "totalmente",
+     "t": 37.62,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 38.02,
+   "end": 38.66,
+   "words": [
+    {
+     "text": "gratis",
+     "t": 38.02,
+     "accent": true
+    }
+   ]
+  },
+  {
+   "start": 38.66,
+   "end": 38.82,
+   "words": [
+    {
+     "text": "Y",
+     "t": 38.66,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 38.82,
+   "end": 39.46,
+   "words": [
+    {
+     "text": "comentadme",
+     "t": 38.82,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 39.46,
+   "end": 39.62,
+   "words": [
+    {
+     "text": "en",
+     "t": 39.46,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 39.62,
+   "end": 39.78,
+   "words": [
+    {
+     "text": "qué",
+     "t": 39.62,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 39.78,
+   "end": 40.02,
+   "words": [
+    {
+     "text": "punto",
+     "t": 39.78,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 40.02,
+   "end": 40.26,
+   "words": [
+    {
+     "text": "estáis",
+     "t": 40.02,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 40.26,
+   "end": 40.42,
+   "words": [
+    {
+     "text": "ahora",
+     "t": 40.26,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 40.42,
+   "end": 40.66,
+   "words": [
+    {
+     "text": "mismo",
+     "t": 40.42,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 40.66,
+   "end": 40.82,
+   "words": [
+    {
+     "text": "del",
+     "t": 40.66,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 40.82,
+   "end": 41.09,
+   "words": [
+    {
+     "text": "UGC",
+     "t": 40.82,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 41.09,
+   "end": 41.7,
+   "words": [
+    {
+     "text": "Dejádmelo",
+     "t": 41.09,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 41.7,
+   "end": 41.86,
+   "words": [
+    {
+     "text": "por",
+     "t": 41.7,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 41.86,
+   "end": 42.18,
+   "words": [
+    {
+     "text": "comentarios",
+     "t": 41.86,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 42.18,
+   "end": 42.34,
+   "words": [
+    {
+     "text": "que",
+     "t": 42.18,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 42.34,
+   "end": 42.5,
+   "words": [
+    {
+     "text": "os",
+     "t": 42.34,
+     "accent": false
+    }
+   ]
+  },
+  {
+   "start": 42.5,
+   "end": 43.3,
+   "words": [
+    {
+     "text": "leo",
+     "t": 42.5,
+     "accent": true
+    }
+   ]
+  }
+ ],
+ "punch": [
+  0.08,
+  2.4,
+  4.8,
+  6.08,
+  8.56,
+  11.04,
+  13.76,
+  16.16,
+  17.44,
+  19.68,
+  21.28,
+  23.6,
+  25.84,
+  28.08,
+  30.32,
+  32.64,
+  35.52,
+  37.3,
+  38.66,
+  41.09
+ ],
+ "cards": [
+  {
+   "type": "title",
+   "start": 0.0,
+   "end": 2.4,
+   "text": "¿empezando / en UGC?",
+   "y": 860
+  },
+  {
+   "type": "sticker",
+   "start": 3.3,
+   "end": 5.9,
+   "src": "stickers/sparkles.png",
+   "x": 920,
+   "y": 560,
+   "size": 160,
+   "rotate": 10
+  },
+  {
+   "type": "sticker",
+   "start": 6.08,
+   "end": 9.0,
+   "src": "stickers/comunidad.png",
+   "x": 540,
+   "y": 1130,
+   "size": 760,
+   "rotate": -2,
+   "quiet": true,
+   "sfx": {
+    "name": "tada",
+    "db": -12
+   }
+  },
+  {
+   "type": "card",
+   "start": 9.12,
+   "end": 16.9,
+   "title": "un espacio para",
+   "rows": [
+    "compartir dudas",
+    "contar lo que hacemos",
+    "dar pequeños pasos juntas"
+   ],
+   "row_times": [
+    10.64,
+    11.6,
+    13.12
+   ],
+   "y": 930,
+   "quiet": true
+  },
+  {
+   "type": "sticker",
+   "start": 13.2,
+   "end": 16.9,
+   "src": "stickers/hands.png",
+   "x": 920,
+   "y": 560,
+   "size": 170,
+   "rotate": 8,
+   "sfx": false
+  },
+  {
+   "type": "tag",
+   "start": 17.44,
+   "end": 18.95,
+   "text": "y recursos dentro",
+   "y": 1030
+  },
+  {
+   "type": "sticker",
+   "start": 18.95,
+   "end": 24.5,
+   "src": "stickers/recurso.png",
+   "x": 540,
+   "y": 1130,
+   "size": 760,
+   "rotate": 2,
+   "quiet": true,
+   "sfx": {
+    "name": "swish",
+    "db": -12
+   }
+  },
+  {
+   "type": "sticker",
+   "start": 21.9,
+   "end": 24.5,
+   "src": "stickers/lupa.png",
+   "x": 920,
+   "y": 560,
+   "size": 180,
+   "rotate": 10,
+   "sfx": false
+  },
+  {
+   "type": "card",
+   "start": 24.72,
+   "end": 28.7,
+   "title": "no hace falta",
+   "rows": [
+    "un portfolio perfecto",
+    "colaboraciones previas"
+   ],
+   "row_times": [
+    25.84,
+    27.68
+   ],
+   "y": 930,
+   "quiet": true
+  },
+  {
+   "type": "sticker",
+   "start": 28.8,
+   "end": 32.9,
+   "src": "stickers/ritmo.png",
+   "x": 540,
+   "y": 1360,
+   "size": 640,
+   "rotate": -3
+  },
+  {
+   "type": "sticker",
+   "start": 33.84,
+   "end": 35.95,
+   "src": "stickers/escribe.png",
+   "x": 540,
+   "y": 1410,
+   "size": 780,
+   "rotate": -2,
+   "sfx": {
+    "name": "pop",
+    "db": -12
+   }
+  },
+  {
+   "type": "sticker",
+   "start": 35.95,
+   "end": 38.6,
+   "src": "stickers/notif.png",
+   "x": 540,
+   "y": 1450,
+   "size": 900,
+   "rotate": 0,
+   "quiet": true,
+   "sfx": {
+    "name": "ding",
+    "db": -12
+   }
+  },
+  {
+   "type": "sticker",
+   "start": 37.3,
+   "end": 38.6,
+   "src": "stickers/gratis.png",
+   "x": 800,
+   "y": 1500,
+   "size": 360,
+   "rotate": 8,
+   "sfx": {
+    "name": "pop",
+    "db": -14
+   }
+  },
+  {
+   "type": "tag",
+   "start": 38.66,
+   "end": 41.0,
+   "text": "¿en qué punto estás?",
+   "y": 1030
+  },
+  {
+   "type": "sticker",
+   "start": 38.7,
+   "end": 42.8,
+   "src": "stickers/raise.png",
+   "x": 920,
+   "y": 560,
+   "size": 180,
+   "rotate": 8
+  },
+  {
+   "type": "cta",
+   "start": 41.05,
+   "end": 42.8,
+   "text": "escribe COMUNIDAD",
+   "quiet": true
+  }
+ ]
+}

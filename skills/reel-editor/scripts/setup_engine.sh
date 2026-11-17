@@ -18,6 +18,13 @@ mk snap   "anoisesrc=d=0.06:c=white:a=0.9"      "highpass=f=2200,afade=t=out:st=
 mk chime  "sine=f=1320:d=0.7"                   "aecho=0.6:0.5:60:0.35,afade=t=out:st=0.05:d=0.65"
 mk swish  "anoisesrc=d=0.25:c=pink:a=0.5"       "highpass=f=900,lowpass=f=7000,afade=t=in:d=0.12:curve=exp,afade=t=out:st=0.12:d=0.13"
 mk typing "aevalsrc='0.7*random(0)*lt(mod(t\\,0.085)\\,0.006)':d=0.9" "highpass=f=1500,lowpass=f=8000,volume=1.8"
+mk ding   "sine=f=1318:d=1.2"                   "volume=0.5,afade=t=out:st=0.02:d=1.15"
+mk riser  "aevalsrc=0.5*sin(2*PI*(200*t+900*t*t))*lt(t\\,1.2):d=1.3" "afade=t=in:d=0.9,afade=t=out:st=1.15:d=0.15"
+mk boing  "aevalsrc=0.6*sin(2*PI*(180+60*sin(2*PI*9*t))*t)*exp(-3*t):d=0.8" "anull"
+mk boom   "aevalsrc=0.8*sin(2*PI*(120*exp(-12*t))*t*8)*exp(-9*t):d=0.5" "anull"
+mk tada   "aevalsrc=0.35*(sin(2*PI*1046*t)*lt(t\\,0.12)+sin(2*PI*1318*t)*gte(t\\,0.12)*lt(t\\,0.24)+sin(2*PI*1568*t)*gte(t\\,0.24)*exp(-2.5*(t-0.24))):d=1.1" "anull"
+mk click  "anoisesrc=d=0.12:c=white:a=0.6"      "highpass=f=1500,afade=t=out:st=0.02:d=0.1"
+mk camara "anoisesrc=d=0.25:c=pink:a=0.7"       "bandpass=f=3000:w=2000,afade=t=out:st=0.03:d=0.2"
 # Bring every effect up to a -1 dB peak: synthesised noise comes out ~20 dB quieter than a voice and disappears in the mix.
 for f in "$E"/sfx/*.wav; do
   [ -e "$f.norm" ] && continue
